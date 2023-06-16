@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<section class="event" id="event">
+			<div class="timeline">
+				<div class="container left-container">
+					<div class="text-box">
+						<h3>Hari Kemerdekaan</h3>
+						<small>17 Agustus 2022</small>
+						<p>
+							Kami mengikuti peringatan Hari Kemerdekaan Indonesia
+							yang diadakan oleh OSIS, salah satunya yaitu lomba.
+						</p>
+						<div class="slider-wrapper">
+							<div class="slider">
+								<img src="img/cth1.jpg" id="slide-1" />
+								<img src="img/cth2.jpg" id="slide-2" />
+								<img src="img/cth3.jpg" id="slide-3" />
+							</div>
+							<div class="slider-nav">
+								<a href="#slide-1"></a>
+								<a href="#slide-2"></a>
+								<a href="#slide-3"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
+	<style>
+		body {
+			background-color: black;
+		}
+		.event {
+			padding: 3rem 7% 5rem;
+			text-align: center;
+			min-height: 1000px;
+		}
+		.timeline {
+			position: relative;
+			max-width: 1200px;
+			margin: 100px auto;
+		}
+		.container {
+			padding: 10px 50px;
+			position: relative;
+			width: 50%;
+			border-radius: 5px;
+			animation: movedown 1s linear forwards;
+			opacity: 0;
+		}
+		@keyframes movedown {
+			0% {
+				opacity: 1;
+				transform: translateY(-30px);
+			}
+			100% {
+				opacity: 1;
+				transform: translateY(0px);
+			}
+		}
+		.container:nth-child(1) {
+			animation-delay: 0s;
+		}
+		.container:nth-child(2) {
+			animation-delay: 1s;
+		}
+		.container:nth-child(3) {
+			animation-delay: 2s;
+		}
+		.container:nth-child(4) {
+			animation-delay: 3s;
+		}
+		.container:nth-child(5) {
+			animation-delay: 4s;
+		}
+		.container:nth-child(6) {
+			animation-delay: 5s;
+		}
+		.container:nth-child(7) {
+			animation-delay: 6s;
+		}
+		.text-box {
+			text-align: left;
+			color: #000;
+			padding: 20px 30px;
+			background: #fff;
+			position: relative;
+			border-radius: 10px;
+			font-size: 15px;
+		}
+		.container .text-box img {
+			position: relative;
+			width: 80%;
+			height: 30%;
+			border: none;
+			border-radius: 0;
+		}
+		.left-container {
+			left: 0;
+		}
+		.right-container {
+			left: 50%;
+		}
+		.text-box h3 {
+			font-weight: 600;
+		}
+		.text-box small {
+			display: inline-block;
+			margin-bottom: 15px;
+		}
+		.slider-wrapper {
+			position: relative;
+			max-width: 100%;
+		}
+		.slider-wrapper .slider {
+			display: flex;
+			overflow-x: hidden;
+			scroll-snap-type: x mandatory;
+			scroll-behavior: smooth;
+			box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+		}
+		.slider-wrapper .slider img {
+			flex: 1 0 100%;
+			scroll-snap-align: start;
+			object-fit: cover;
+			border-radius: 10px;
+		}
+		.slider-nav {
+			display: flex;
+			column-gap: 1rem;
+			position: absolute;
+			bottom: 1.25rem;
+			left: 50%;
+			transform: translateX(-50%);
+			z-index: 1;
+		}
+		.slider-nav a {
+			width: 0.5rem;
+			height: 0.5rem;
+			border-radius: 50%;
+			background-color: black;
+			opacity: 75%;
+			transition: opacity ease 250ms;
+		}
+		.slider-nav a:hover {
+			opacity: 1;
+		}
+	</style>
+</html>
