@@ -1,0 +1,60 @@
+{
+	"event": [
+		{
+			"id": "merdeka",
+			"nama": "Hari Kemerdekaan",
+			"tanggal": "17 Agustus 2022",
+			"shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, similique",
+			"longDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt incidunt magni voluptatum iste amet, ipsa facere a placeat error, doloremque saepe exercitationem! Perspiciatis suscipit ad doloribus odio ea, in esse."
+		},
+		{
+			"id": "bakar1",
+			"nama": "Bakar - Bakar #1",
+			"tanggal": "14 Oktober 2022",
+			"shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,similique!",
+			"longDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt incidunt magni voluptatum iste amet, ipsa facere a placeat error, doloremque saepe exercitationem! Perspiciatis suscipit ad doloribus odio ea, in esse."
+		},
+		{
+			"id": "semarang",
+			"nama": "Trip to Semarang",
+			"tanggal": "26 Oktober 2022",
+			"shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,similique!",
+			"longDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt incidunt magni voluptatum iste amet, ipsa facere a placeat error, doloremque saepe exercitationem! Perspiciatis suscipit ad doloribus odio ea, in esse."
+		},
+		{
+			"id": "yb",
+			"nama": "Foto Yearbook",
+			"tanggal": "20 Januari 2023",
+			"shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,similique!",
+			"longDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt incidunt magni voluptatum iste amet, ipsa facere a placeat error, doloremque saepe exercitationem! Perspiciatis suscipit ad doloribus odio ea, in esse."
+		},
+		{
+			"id": "nexus",
+			"nama": "Nexus",
+			"tanggal": "23 Februari 2023",
+			"shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,similique!",
+			"longDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt incidunt magni voluptatum iste amet, ipsa facere a placeat error, doloremque saepe exercitationem! Perspiciatis suscipit ad doloribus odio ea, in esse."
+		},
+		{
+			"id": "bali",
+			"nama": "Goes to Bali",
+			"tanggal": "3 Mei 2023",
+			"shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,similique!",
+			"longDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt incidunt magni voluptatum iste amet, ipsa facere a placeat error, doloremque saepe exercitationem! Perspiciatis suscipit ad doloribus odio ea, in esse."
+		},
+		{
+			"id": "graduate",
+			"nama": "Purnawiyata",
+			"tanggal": "25 Mei 2023",
+			"shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,similique!",
+			"longDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt incidunt magni voluptatum iste amet, ipsa facere a placeat error, doloremque saepe exercitationem! Perspiciatis suscipit ad doloribus odio ea, in esse."
+		},
+		{
+			"id": "bakar2",
+			"nama": "Bakar - Bakar #2",
+			"tanggal": "3 Juni 2023",
+			"shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,similique!",
+			"longDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt incidunt magni voluptatum iste amet, ipsa facere a placeat error, doloremque saepe exercitationem! Perspiciatis suscipit ad doloribus odio ea, in esse."
+		}
+	]
+}
