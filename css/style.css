@@ -1,6 +1,7 @@
 /* Gaya CSS */
 :root {
 	--primary: #fff;
+	font-size: 16px;
 }
 
 html {
@@ -229,7 +230,7 @@ body {
 	margin-top: 4rem;
 	width: 45%;
 	border-radius: calc(441.6px / 2);
-	box-shadow: 0 0 1rem rgba(255, 255, 255, 0.5);
+	border: 1px solid white;
 }
 .walkes h4 {
 	font-size: 1.25rem;
@@ -246,7 +247,6 @@ body {
 }
 .murid {
 	padding-top: 3rem;
-	padding-right: 2rem;
 	text-align: center;
 }
 .murid img {
@@ -546,6 +546,8 @@ footer .credits a:hover {
 	}
 	.about .row .about-img img {
 		width: 75%;
+	}
+	.walkes img {
 	}
 	.timeline {
 		margin: 50px;
