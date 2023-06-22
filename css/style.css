@@ -1,7 +1,6 @@
 /* Gaya CSS */
 :root {
 	--primary: #fff;
-	font-size: 16px;
 }
 
 html {
@@ -29,7 +28,7 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	padding: 1rem 7%;
-	background-color: rgba(1, 1, 1, 0.7);
+	background-color: rgba(1, 1, 1, 0.65);
 	border-bottom: 1px solid #4b5320;
 	box-shadow: 0px 2px 4px rgba(128, 128, 128, 0.5);
 	position: fixed;
@@ -169,14 +168,8 @@ body {
 }
 
 /* Family section */
-.family .photo img {
-	opacity: 0.7;
-	padding: 4rem 0;
-	object-fit: contain;
-	object-position: center;
-	width: 100%;
-}
 .family {
+	width: 100%;
 	color: #fff;
 	padding: 8.5rem 7% 7rem;
 	text-align: center;
@@ -224,7 +217,7 @@ body {
 }
 .walkes {
 	margin: auto;
-	width: 409.8px;
+	width: 100%;
 }
 .family .walkes img {
 	margin-top: 4rem;
@@ -316,7 +309,7 @@ body {
 	background: #fff;
 	position: relative;
 	border-radius: 10px;
-	font-size: 15px;
+	font-size: 1rem;
 }
 .container .text-box img {
 	position: relative;
@@ -453,6 +446,13 @@ footer .credits a:hover {
 	width: 80%;
 	animation: animateModal 0.5s;
 }
+.modal-container .modal-content-img {
+	width: 45%;
+	margin-right: 2rem;
+}
+.modal-container .modal-content-text {
+	width: 45%;
+}
 
 /* Modal Animation */
 @keyframes animateModal {
@@ -476,13 +476,11 @@ footer .credits a:hover {
 	flex-wrap: nowrap;
 }
 .modal-content-img img {
-	height: 22.8rem;
+	width: 100%;
+	height: auto;
 	border-radius: 5px;
-	margin-right: 2rem;
-	margin-bottom: 2rem;
 }
 .modal-content-text {
-	margin-right: 2rem;
 	text-align: left;
 	flex-direction: column;
 }
@@ -502,6 +500,12 @@ footer .credits a:hover {
 		font-size: 75%;
 	}
 }
+@media (max-width: 1050px) {
+	.modal-container .modal-content-img,
+	.modal-container .modal-content-text {
+		width: 95%;
+	}
+}
 /* Tablet */
 @media (max-width: 768px) {
 	html {
@@ -515,7 +519,7 @@ footer .credits a:hover {
 	.navbar .navbar-nav {
 		position: absolute;
 		top: 100%;
-		right: -100%;
+		right: -200%;
 		background-color: #4d5320;
 		width: 30rem;
 		height: 100vh;
@@ -546,8 +550,6 @@ footer .credits a:hover {
 	}
 	.about .row .about-img img {
 		width: 75%;
-	}
-	.walkes img {
 	}
 	.timeline {
 		margin: 50px;
