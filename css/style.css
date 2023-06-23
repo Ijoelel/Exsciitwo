@@ -217,13 +217,18 @@ body {
 }
 .walkes {
 	margin: auto;
-	width: 100%;
+	position: relative;
+	width: fit-content;
 }
-.family .walkes img {
+.walkes img {
 	margin-top: 4rem;
-	width: 45%;
-	border-radius: calc(441.6px / 2);
+	width: 18rem;
+	padding: 3px;
+	border-radius: 100vw;
 	border: 1px solid white;
+}
+.family .walkes img:hover {
+	width: 20rem;
 }
 .walkes h4 {
 	font-size: 1.25rem;
@@ -235,7 +240,7 @@ body {
 	justify-content: center;
 }
 .family .row .murid {
-	width: 341.5px;
+	width: 25rem;
 	height: auto;
 }
 .murid {
@@ -243,7 +248,7 @@ body {
 	text-align: center;
 }
 .murid img {
-	width: 50%;
+	width: 15rem;
 	padding: 3px;
 	border: 1px solid white;
 	border-radius: 50%;
@@ -446,13 +451,6 @@ footer .credits a:hover {
 	width: 80%;
 	animation: animateModal 0.5s;
 }
-.modal-container .modal-content-img {
-	width: 45%;
-	margin-right: 2rem;
-}
-.modal-container .modal-content-text {
-	width: 45%;
-}
 
 /* Modal Animation */
 @keyframes animateModal {
@@ -475,12 +473,49 @@ footer .credits a:hover {
 	display: flex;
 	flex-wrap: nowrap;
 }
-.modal-content-img img {
+.modal-content-img {
+	width: 45%;
+	margin-right: 1rem;
+	position: relative;
+}
+.image-content {
 	width: 100%;
-	height: auto;
-	border-radius: 5px;
+	display: flex;
+	overflow-x: hidden;
+	position: relative;
+}
+.image-content .dragging img {
+	cursor: grab;
+	user-select: none;
+}
+.modal-content-img .btn {
+	position: absolute;
+	z-index: 1;
+	color: rgba(46, 44, 44, 0.7);
+}
+.modal-content-img .btn:hover {
+	color: rgba(255, 255, 255, 1);
+}
+#right {
+	top: 45%;
+	right: 1rem;
+}
+#left {
+	top: 45%;
+	left: 1rem;
+}
+.image-content img {
+	width: 100%;
+	padding: 1rem;
+	border-radius: 30px;
+	flex-shrink: 0;
+	flex-grow: 0;
+}
+.image-content img:last-child {
+	margin: 0;
 }
 .modal-content-text {
+	width: 45%;
 	text-align: left;
 	flex-direction: column;
 }
@@ -511,7 +546,10 @@ footer .credits a:hover {
 	html {
 		font-size: 62.5%;
 	}
-
+	.modal-container .modal-content-img,
+	.modal-container .modal-content-text {
+		width: 90%;
+	}
 	#ham-menu {
 		display: inline-block;
 	}
