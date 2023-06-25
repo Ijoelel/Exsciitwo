@@ -6,7 +6,11 @@
 			"tanggal": "17 Agustus 2022",
 			"shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, similique",
 			"longDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt incidunt magni voluptatum iste amet, ipsa facere a placeat error, doloremque saepe exercitationem! Perspiciatis suscipit ad doloribus odio ea, in esse.",
-			"url": ["img/cth1.jpg", "img/cth2.jpg", "img/cth3.jpg"]
+			"url": [
+				"assets/img/cth1.jpg",
+				"assets/img/cth2.jpg",
+				"assets/img/cth3.jpg"
+			]
 		},
 		{
 			"id": "bakar1",
@@ -14,7 +18,7 @@
 			"tanggal": "14 Oktober 2022",
 			"shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,similique!",
 			"longDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt incidunt magni voluptatum iste amet, ipsa facere a placeat error, doloremque saepe exercitationem! Perspiciatis suscipit ad doloribus odio ea, in esse.",
-			"url": ["img/cth3.jpg", "img/cth4.jpg"]
+			"url": ["assets/img/cth3.jpg", "assets/img/cth4.jpg"]
 		},
 		{
 			"id": "semarang",
@@ -22,7 +26,7 @@
 			"tanggal": "26 Oktober 2022",
 			"shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,similique!",
 			"longDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt incidunt magni voluptatum iste amet, ipsa facere a placeat error, doloremque saepe exercitationem! Perspiciatis suscipit ad doloribus odio ea, in esse.",
-			"url": ["img/cth1.jpg", "img/cth2.jpg"]
+			"url": ["assets/img/cth1.jpg", "assets/img/cth2.jpg"]
 		},
 		{
 			"id": "yb",
@@ -30,7 +34,7 @@
 			"tanggal": "20 Januari 2023",
 			"shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,similique!",
 			"longDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt incidunt magni voluptatum iste amet, ipsa facere a placeat error, doloremque saepe exercitationem! Perspiciatis suscipit ad doloribus odio ea, in esse.",
-			"url": ["img/cth3.jpg", "img/cth4.jpg"]
+			"url": ["assets/img/cth3.jpg", "assets/img/cth4.jpg"]
 		},
 		{
 			"id": "nexus",
@@ -38,7 +42,7 @@
 			"tanggal": "23 Februari 2023",
 			"shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,similique!",
 			"longDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt incidunt magni voluptatum iste amet, ipsa facere a placeat error, doloremque saepe exercitationem! Perspiciatis suscipit ad doloribus odio ea, in esse.",
-			"url": ["img/cth1.jpg", "img/cth2.jpg"]
+			"url": ["assets/img/cth1.jpg", "assets/img/cth2.jpg"]
 		},
 		{
 			"id": "bali",
@@ -46,7 +50,7 @@
 			"tanggal": "3 Mei 2023",
 			"shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,similique!",
 			"longDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt incidunt magni voluptatum iste amet, ipsa facere a placeat error, doloremque saepe exercitationem! Perspiciatis suscipit ad doloribus odio ea, in esse.",
-			"url": ["img/cth3.jpg", "img/cth4.jpg"]
+			"url": ["assets/img/cth3.jpg", "assets/img/cth4.jpg"]
 		},
 		{
 			"id": "graduate",
@@ -54,7 +58,7 @@
 			"tanggal": "25 Mei 2023",
 			"shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,similique!",
 			"longDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt incidunt magni voluptatum iste amet, ipsa facere a placeat error, doloremque saepe exercitationem! Perspiciatis suscipit ad doloribus odio ea, in esse.",
-			"url": ["img/cth1.jpg", "img/cth2.jpg"]
+			"url": ["assets/img/cth1.jpg", "assets/img/cth2.jpg"]
 		},
 		{
 			"id": "bakar2",
@@ -62,7 +66,7 @@
 			"tanggal": "3 Juni 2023",
 			"shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,similique!",
 			"longDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt incidunt magni voluptatum iste amet, ipsa facere a placeat error, doloremque saepe exercitationem! Perspiciatis suscipit ad doloribus odio ea, in esse.",
-			"url": ["img/cth3.jpg", "img/cth4.jpg"]
+			"url": ["assets/img/cth3.jpg", "assets/img/cth4.jpg"]
 		}
 	]
 }

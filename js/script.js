@@ -1,10 +1,13 @@
-// Toggle class active
+const player = new Plyr("#player");
+
+// Toggle class activ
 const navbarNav = document.querySelector(".navbar-nav");
 // Ketika hamburger menu di klik
 document.querySelector("#ham-menu").onclick = () => {
 	navbarNav.classList.toggle("active");
 };
 
+// untuk menutup ham-menu
 const outNav = document.querySelector("#ham-menu");
 const navbarNavElements = document.querySelectorAll(".navbar-nav a");
 

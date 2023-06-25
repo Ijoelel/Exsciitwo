@@ -1,0 +1,23 @@
+{
+	"name": "web-kelas",
+	"version": "1.0.0",
+	"description": "",
+	"main": "script.js",
+	"type": "module",
+	"scripts": {
+		"test": "hai"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Ijoelel/Exsciitwo.git"
+	},
+	"author": "Ijoell",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Ijoelel/Exsciitwo/issues"
+	},
+	"homepage": "https://github.com/Ijoelel/Exsciitwo#readme",
+	"dependencies": {
+		"core.js": "^0.4.2"
+	}
+}
