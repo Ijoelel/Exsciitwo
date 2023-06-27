@@ -228,9 +228,6 @@ body {
 	border-radius: 100vw;
 	border: 1px solid white;
 }
-.family .walkes img:hover {
-	width: 20rem;
-}
 .walkes h4 {
 	font-size: 1.5rem;
 }
@@ -240,7 +237,7 @@ body {
 	flex-wrap: wrap;
 	justify-content: center;
 }
-.family .row .murid {
+.family .murid {
 	margin: 2rem 2rem 1rem;
 	width: 17.5rem;
 	height: auto;
@@ -637,6 +634,12 @@ footer .credits a:hover {
 	.family .walkes h4 {
 		font-size: 1.7rem;
 	}
+	.family .row .murid {
+		width: 20rem;
+	}
+	.murid img {
+		width: 15rem;
+	}
 	.family .murid h4 {
 		font-size: 1.5rem;
 	}
@@ -665,6 +668,8 @@ footer .credits a:hover {
 	}
 	.container .text-box a {
 		font-size: 1.5rem;
+		width: 8.5rem;
+		text-align: center;
 	}
 	.left-container-arrow {
 		border-left: 0;
