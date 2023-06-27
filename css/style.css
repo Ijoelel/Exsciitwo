@@ -583,9 +583,8 @@ footer .credits a:hover {
 	}
 }
 @media (max-width: 1050px) {
-	.modal-container .modal-content-img,
-	.modal-container .modal-content-text {
-		width: 95%;
+	.modal-container {
+		width: 40%;
 	}
 }
 /* Tablet */
@@ -593,9 +592,8 @@ footer .credits a:hover {
 	html {
 		font-size: 62.5%;
 	}
-	.modal-container .modal-content-img,
-	.modal-container .modal-content-text {
-		width: 90%;
+	.modal-container {
+		width: 50%;
 	}
 	#ham-menu {
 		display: inline-block;
@@ -636,8 +634,17 @@ footer .credits a:hover {
 	.about .row .about-img img {
 		width: 75%;
 	}
+	.family .walkes h4 {
+		font-size: 1.7rem;
+	}
+	.family .murid h4 {
+		font-size: 1.5rem;
+	}
+	.family .murid p {
+		font-size: 1.4rem;
+	}
 	.timeline {
-		margin: 50px;
+		margin: 3rem;
 	}
 	.timeline::after {
 		left: 31px;
@@ -649,6 +656,15 @@ footer .credits a:hover {
 	}
 	.container img {
 		left: 10px;
+	}
+	.container .text-box h3 {
+		font-size: 1.7rem;
+	}
+	.container .text-box small {
+		font-size: 1.2rem;
+	}
+	.container .text-box a {
+		font-size: 1.5rem;
 	}
 	.left-container-arrow {
 		border-left: 0;
@@ -663,5 +679,8 @@ footer .credits a:hover {
 @media (max-width: 600px) {
 	html {
 		font-size: 55%;
+	}
+	.modal-container {
+		width: 60%;
 	}
 }
