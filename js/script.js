@@ -43,9 +43,6 @@ fetch("js/event.json")
 					const tanggalElement = document.createElement("small");
 					tanggalElement.textContent = eventData.tanggal;
 
-					const deskripsiElement = document.createElement("p");
-					deskripsiElement.textContent = eventData.longDesc;
-
 					// untuk mengosongkan modalContent
 					modalContentText.innerHTML = "";
 					modalContentImage.innerHTML = "";
@@ -65,7 +62,6 @@ fetch("js/event.json")
 					// menambahkan h3, small, p element ke modalContentText
 					modalContentText.appendChild(namaElement);
 					modalContentText.appendChild(tanggalElement);
-					modalContentText.appendChild(deskripsiElement);
 
 					// carousel infinite effect
 					const contentImage =
@@ -133,15 +129,11 @@ fetch("js/event.json")
 			const tanggalElement = document.createElement("small");
 			tanggalElement.textContent = item.tanggal;
 
-			const deskripsiElement = document.createElement("p");
-			deskripsiElement.textContent = item.shortDesc;
-
 			const textBoxIndex = index % textBoxes.length;
 			const anchor = anchors[textBoxIndex];
 
 			textBoxes[textBoxIndex].insertBefore(namaElement, anchor);
 			textBoxes[textBoxIndex].insertBefore(tanggalElement, anchor);
-			textBoxes[textBoxIndex].insertBefore(deskripsiElement, anchor);
 		});
 	});
 
