@@ -7,6 +7,45 @@ document.querySelector("#ham-menu").onclick = () => {
 	navbarNav.classList.toggle("active");
 };
 
+// Menggunakan event listener untuk menangani perubahan tombol switch
+var switchButton = document.querySelector('.switch input[type="checkbox"]');
+switchButton.checked = false;
+switchButton.addEventListener("change", function () {
+	if (this.checked) {
+		document.querySelector("#logo").src = "assets/img/logo-dark.png";
+		document.documentElement.style.setProperty("--primary_two", "black");
+		document.documentElement.style.setProperty("--primary_three", "white");
+		document.documentElement.style.setProperty(
+			"--hero_beforebg",
+			"rgba(0, 0, 0, 0.6)"
+		);
+		document.documentElement.style.setProperty(
+			"--hero_afterbg",
+			"rgba(0, 0, 0, 1)"
+		);
+		document.documentElement.style.setProperty(
+			"--navbar-bg",
+			"rgba(0, 0, 0, 0.65)"
+		);
+	} else {
+		document.querySelector("#logo").src = "assets/img/logo-light.png";
+		document.documentElement.style.setProperty("--primary_two", "white");
+		document.documentElement.style.setProperty("--primary_three", "black");
+		document.documentElement.style.setProperty(
+			"--hero_beforebg",
+			"rgba(255, 255, 255, 0.1)"
+		);
+		document.documentElement.style.setProperty(
+			"--hero_afterbg",
+			"rgba(255, 255, 255, 1)"
+		);
+		document.documentElement.style.setProperty(
+			"--navbar-bg",
+			"rgba(255, 255, 255, 0.65)"
+		);
+	}
+});
+
 // untuk menutup ham-menu
 const outNav = document.querySelector("#ham-menu");
 const navbarNavElements = document.querySelectorAll(".navbar-nav a");
@@ -34,7 +73,7 @@ fetch("js/event.json")
 		const modalContentImage = document.querySelector(".image-content");
 
 		eventDetailButtons.forEach((btn) => {
-			btn.addEventListener("click", (e) => {
+			btn.addEventListener("click", async (e) => {
 				const eventData = data.event.find((item) => item.id === btn.id);
 				if (eventData) {
 					const namaElement = document.createElement("h3");
@@ -76,7 +115,7 @@ fetch("js/event.json")
 					arrowBtns.forEach((btn) => {
 						const rightButton = document.getElementById("right");
 						const leftButton = document.getElementById("left");
-						btn.addEventListener("click", (e) => {
+						btn.addEventListener("click", async (e) => {
 							rightButton.addEventListener("click", () => {
 								const scrollAmount = contentImage.clientWidth; // Menggunakan 10% dari lebar container sebagai jarak scroll
 								contentImage.scrollBy({

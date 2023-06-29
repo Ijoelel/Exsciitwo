@@ -1,6 +1,12 @@
 /* Gaya CSS */
 :root {
-	--primary: #fff;
+	--primary_one: #4b5320;
+	--primary_two: white;
+	--primary_three: black;
+	--primary_four: #808080;
+	--hero_beforebg: rgba(255, 255, 255, 0.1);
+	--hero_afterbg: rgba(255, 255, 255, 1);
+	--navbar-bg: rgba(255, 255, 255, 0.65);
 }
 
 html {
@@ -18,8 +24,8 @@ html {
 
 body {
 	font-family: "Poppins", sans-serif;
-	background-color: #000;
-	color: #fff;
+	background-color: var(--primary_two);
+	color: var(--primary_three);
 }
 
 /* navbar */
@@ -28,8 +34,8 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	padding: 1rem 7%;
-	background-color: rgba(1, 1, 1, 0.65);
-	border-bottom: 1px solid #4b5320;
+	background-color: var(--navbar-bg);
+	border-bottom: 1px solid var(--primary_one);
 	box-shadow: 0px 2px 4px rgba(128, 128, 128, 0.5);
 	position: fixed;
 	top: 0;
@@ -37,52 +43,115 @@ body {
 	right: 0;
 	z-index: 9999;
 }
-
 .navbar .navbar-logo {
 	font-size: 2rem;
 	font-weight: 700;
-	color: var(--primary);
+	color: var(--primary_four);
 	font-style: italic;
 }
 .navbar .navbar-logo span {
-	color: #4b5229;
+	color: var(--primary_one);
 }
-
+.navbar-nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 .navbar .navbar-nav a {
-	color: var(--primary);
+	color: var(--primary_three);
 	display: inline-block;
 	font-size: 1.3rem;
 	margin: 0.5rem;
+	margin-top: 1rem;
 }
 .navbar .navbar-nav a:hover {
-	color: #4b5320;
+	color: var(--primary_one);
 	opacity: 1;
 }
 .navbar .navbar-nav a::after {
 	content: "";
 	display: block;
 	padding-bottom: 0.5rem;
-	border-bottom: 0.1rem solid #4b5320;
+	border-bottom: 0.1rem solid var(--primary_one);
 	transform: scaleX(0);
 	transition: 0.2s linier;
 }
 .navbar .navbar-nav a:hover::after {
 	transform: scaleX(0.5);
 }
+.navbar-theme {
+	position: absolute;
+	right: 3rem;
+	width: fit-content;
+	display: flex;
+	align-items: center;
+}
+
+/* Gaya umum untuk label tombol switch */
+.switch {
+	margin: 0 5px;
+	position: relative;
+	display: inline-block;
+	width: 3rem;
+	height: 1.5rem;
+}
+
+/* Gaya untuk input checkbox tersembunyi */
+.switch input[type="checkbox"] {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+/* Gaya untuk slider tombol switch */
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: var(--primary_four);
+	transition: 0.4s;
+	border-radius: 1rem;
+}
+
+/* Gaya saat tombol switch diaktifkan */
+.slider::before {
+	position: absolute;
+	content: "";
+	height: 1.5rem;
+	width: 1.5rem;
+	border-radius: 50%;
+	background-color: white;
+	transition: 0.4s;
+	transform: translateX(0);
+}
+
+/* Gaya saat tombol switch diaktifkan */
+input:checked + .slider {
+	background-color: var(--primary_one);
+}
+
+/* Gaya untuk tampilan tombol switch saat diaktifkan */
+input:checked + .slider::before {
+	transform: translateX(1.5rem);
+}
+
 .navbar .navbar-button a {
-	color: var(--primary);
+	color: var(--primary_two);
 }
 .navbar .navbar-button a:hover {
-	color: #4b5320;
+	color: var(--primary_one);
 }
 
 #ham-menu {
 	display: none;
+	color: var(--primary_three);
 }
 
 /* Hero Section */
 .hero {
-	color: #fff;
 	min-height: 100vh;
 	display: flex;
 	align-items: center;
@@ -100,7 +169,7 @@ body {
 	z-index: 1;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: var(--hero_beforebg);
 }
 .hero::after {
 	content: "";
@@ -111,7 +180,7 @@ body {
 	bottom: 0;
 	background: linear-gradient(
 		0deg,
-		rgba(1, 1, 3, 1) 8%,
+		var(--hero_afterbg) 8%,
 		rgba(255, 255, 255, 0) 25%
 	);
 }
@@ -127,15 +196,16 @@ body {
 	line-height: 1.2;
 }
 .hero .content h1 span {
-	color: #4b5320;
+	color: var(--primary_one);
 	text-shadow: 1px 1px 3px white;
 }
 .hero .content p {
+	color: white;
 	font-size: 1.6rem;
 	margin-top: 1rem;
 	line-height: 1.4;
-	font-weight: 100;
-	text-shadow: 1px 1px 3pxx rgba(1, 1, 3, 0.5);
+	font-weight: 300;
+	text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
 }
 .hero .content .member {
 	color: #fff;
@@ -143,7 +213,7 @@ body {
 	padding: 0.5rem 2rem;
 	margin-top: 1rem;
 	font-size: 1.4rem;
-	background-color: #4b5320;
+	background-color: var(--primary_one);
 	border-radius: 0.5rem;
 	box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
 }
@@ -154,15 +224,25 @@ body {
 	padding: 8.5rem 7% 1rem;
 	text-align: center;
 }
+.about::after,
+.family::after {
+	content: "";
+	display: block;
+	margin: 10% 20% 0;
+	width: 60%;
+	height: 10%;
+	border-bottom: 1px solid var(--primary_three);
+}
 .about h2,
 .event h2,
 .family h2 {
 	font-size: 3rem;
+	color: var(--primary_three);
 }
 .about h2 span,
 .family h2 span,
 .event h2 span {
-	color: #4b5320;
+	color: var(--primary_one);
 }
 .about .row .about-img img {
 	padding: 2rem;
@@ -171,58 +251,26 @@ body {
 	font-size: 3rem;
 }
 .about .row .content h3 span {
-	color: #4b5320;
+	color: var(--primary_one);
 }
 .about .row .content p {
 	padding: 0 5rem;
 	text-align: justify;
 	margin-top: 5rem;
+	margin-bottom: 2rem;
 	font-size: 1.5rem;
 }
 
 /* Family section */
 .family {
 	width: 100%;
-	color: #fff;
-	padding: 8.5rem 7% 7rem;
+	color: var(--primary_three);
+	padding: 8.5rem 7% 2rem;
 	text-align: center;
 	min-height: 100vh;
 	display: inline-block;
 	align-items: center;
-	background-image: radial-gradient(rgba(0, 0, 0, 0.5), rgba(15, 15, 15, 0.5)),
-		url("../assets/img/bg-1.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
 	position: relative;
-}
-.family::before {
-	content: "";
-	display: block;
-	width: 100%;
-	height: 10rem;
-	position: absolute;
-	top: 0;
-	right: 0;
-	background: linear-gradient(
-		0deg,
-		rgba(255, 255, 255, 0) 15%,
-		rgba(1, 1, 3, 1) 70%
-	);
-}
-.family::after {
-	content: "";
-	display: block;
-	width: 100%;
-	height: 10rem;
-	bottom: 0;
-	right: 0;
-	position: absolute;
-	background: linear-gradient(
-		0deg,
-		rgba(1, 1, 3, 1) 15%,
-		rgba(255, 255, 255, 0) 70%
-	);
 }
 .family h2 {
 	padding-top: 2rem;
@@ -237,7 +285,7 @@ body {
 	width: 18rem;
 	padding: 3px;
 	border-radius: 100vw;
-	border: 1px solid white;
+	border: 1px solid var(--primary_three);
 }
 .walkes h4 {
 	font-size: 1.5rem;
@@ -265,7 +313,7 @@ body {
 .murid img {
 	width: 13rem;
 	padding: 3px;
-	border: 1px solid white;
+	border: 1px solid var(--primary_three);
 	border-radius: 50%;
 }
 .murid img.loading {
@@ -283,11 +331,13 @@ body {
 		opacity: 0.6;
 	}
 }
+
 /* Event */
 .event {
-	padding: 8.5rem 7% 7rem;
+	padding: 8.5rem 7% 1rem;
 	text-align: center;
 	min-height: 1000px;
+	background-color: var(--primary_two);
 }
 .timeline {
 	position: relative;
@@ -301,6 +351,21 @@ body {
 	border-radius: 5px;
 	animation: movedown 1s linear forwards;
 	opacity: 0;
+	z-index: 1;
+}
+.container::before {
+	content: "";
+	position: absolute;
+	z-index: -2;
+	top: 0.97rem;
+	right: 2.97rem;
+	bottom: 0.97rem;
+	left: 2.97rem;
+	box-shadow: 1px 1px 3px var(--primary_three);
+	border-radius: 10px;
+}
+.left-container::before {
+	box-shadow: -1px 1px 3px var(--primary_three);
 }
 @keyframes movedown {
 	0% {
@@ -338,9 +403,9 @@ body {
 }
 .text-box {
 	text-align: left;
-	color: #000;
+	color: black;
 	padding: 1rem 2rem;
-	background: #fff;
+	background: white;
 	position: relative;
 	border-radius: 10px;
 	font-size: 1rem;
@@ -367,6 +432,7 @@ body {
 	right: -20px;
 	top: 32px;
 	z-index: 10;
+	border: 3px solid var(--primary_one);
 }
 .right-container img {
 	left: -20px;
@@ -376,11 +442,11 @@ body {
 	position: absolute;
 	width: 4px;
 	height: 100%;
-	background-color: #fff;
+	background-color: var(--primary_three);
 	top: 0;
 	left: 50%;
 	margin-left: -3px;
-	z-index: -1;
+	z-index: 0;
 	animation: moveline 6s linear forwards;
 }
 @keyframes moveline {
@@ -406,7 +472,7 @@ body {
 	display: block;
 	font-size: 1.3rem;
 	padding: 5px;
-	background-color: #4b5320;
+	background-color: var(--primary_one);
 	margin-top: 1rem;
 	width: fit-content;
 	border-radius: 5px;
@@ -419,7 +485,7 @@ body {
 	z-index: 1;
 	border-top: 15px solid transparent;
 	border-bottom: 15px solid transparent;
-	border-left: 15px solid #fff;
+	border-left: 15px solid var(--primary_one);
 	right: -15px;
 }
 .right-container-arrow {
@@ -430,7 +496,7 @@ body {
 	z-index: 1;
 	border-top: 15px solid transparent;
 	border-bottom: 15px solid transparent;
-	border-right: 15px solid #fff;
+	border-right: 15px solid var(--primary_one);
 	left: -15px;
 }
 
@@ -444,7 +510,7 @@ body {
 .documentation h2 {
 	text-align: center;
 	font-size: 3rem;
-	color: #fff;
+	color: var(--primary_three);
 }
 .video-player {
 	margin: 3rem 1rem;
@@ -455,7 +521,7 @@ body {
 
 /* Footer */
 footer {
-	background-color: #4b5320;
+	background-color: var(--primary_one);
 	text-align: center;
 	padding: 1rem;
 	display: flex;
@@ -608,11 +674,22 @@ footer .credits a:hover {
 
 	.navbar .navbar-nav {
 		position: absolute;
+		justify-content: flex-start;
+		align-items: flex-start;
 		top: 100%;
 		right: -100%;
 		background-color: #4d5320;
 		width: 30rem;
 		height: 100vh;
+		flex-direction: column;
+	}
+	.navbar-theme {
+		position: relative;
+		color: white;
+		left: 2rem;
+	}
+	input:checked + .slider {
+		background-color: rgb(0, 0, 0, 0.6);
 	}
 	.navbar .navbar-nav.active {
 		right: 0;

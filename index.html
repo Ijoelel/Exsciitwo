@@ -29,11 +29,21 @@
 			<a href="" class="navbar-logo">XII <span>IPA 2</span></a>
 
 			<div class="navbar-nav">
-				<a href="#home">Home</a>
-				<a href="#about">About Us</a>
-				<a href="#family">Family</a>
-				<a href="#event">Event</a>
-				<a href="#doc">Documentation</a>
+				<div class="navbar-tab">
+					<a href="#home">Home</a>
+					<a href="#about">About Us</a>
+					<a href="#family">Family</a>
+					<a href="#event">Event</a>
+					<a href="#doc">Documentation</a>
+				</div>
+				<div class="navbar-theme">
+					<i data-feather="sun"></i>
+					<label class="switch">
+						<input type="checkbox" />
+						<span class="slider"></span>
+					</label>
+					<i data-feather="moon"></i>
+				</div>
 			</div>
 			<div class="navbar-button">
 				<a id="ham-menu"><i data-feather="menu"></i></a>
@@ -56,7 +66,11 @@
 			<h2><span>Tentang</span> Kami</h2>
 			<div class="row">
 				<div class="about-img">
-					<img src="assets/img/logo.png" alt="Our-Logo" />
+					<img
+						id="logo"
+						src="assets/img/logo-light.png"
+						alt="Our-Logo"
+					/>
 				</div>
 				<div class="content">
 					<h3><span>할</span> 수 <span>있</span> 어</h3>
@@ -95,7 +109,7 @@
 
 		<!-- Family section start -->
 		<section id="family" class="family">
-			<h2><span>Keluarga </span>XII IPA 2</h2>
+			<h2>Keluarga <span>XII IPA 2</span></h2>
 			<div class="walkes">
 				<img src="assets/img/photo/photo (0).png" alt="mami" />
 				<h4 class="name">Dra.Nurcahyati</h4>
