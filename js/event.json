@@ -43,13 +43,25 @@
 			"id": "nexus",
 			"nama": "Nexus",
 			"tanggal": "23 Februari 2023",
-			"url": ["assets/img/cth1.jpg", "assets/img/cth2.jpg"]
+			"url": [
+				"assets/img/nexus/img (1).jpg",
+				"assets/img/nexus/img (2).jpg",
+				"assets/img/nexus/img (3).jpg",
+				"assets/img/nexus/img (4).jpg",
+				"assets/img/nexus/img (5).jpg"
+			]
 		},
 		{
 			"id": "bali",
 			"nama": "Goes to Bali",
 			"tanggal": "3 Mei 2023",
-			"url": ["assets/img/cth3.jpg", "assets/img/cth4.jpg"]
+			"url": [
+				"assets/img/bali/img (1).jpg",
+				"assets/img/bali/img (2).jpg",
+				"assets/img/bali/img (3).jpg",
+				"assets/img/bali/img (4).jpg",
+				"assets/img/bali/img (5).jpg"
+			]
 		},
 		{
 			"id": "graduate",
