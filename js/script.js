@@ -87,7 +87,7 @@ fetch("js/event.json")
 					modalContentImage.innerHTML = "";
 
 					let firstImgWidth;
-
+					const winWidth = window.innerWidth;
 					// menambahkan img
 					eventData.url.forEach((link, index) => {
 						const contentImage = document.createElement("img");

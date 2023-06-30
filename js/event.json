@@ -13,7 +13,13 @@
 			"nama": "Bakar - Bakar #1",
 			"tanggal": "14 Oktober 2022",
 
-			"url": ["assets/img/cth3.jpg", "assets/img/cth4.jpg"]
+			"url": [
+				"assets/img/bakar1/img (1).jpg",
+				"assets/img/bakar1/img (2).jpg",
+				"assets/img/bakar1/img (3).jpg",
+				"assets/img/bakar1/img (4).jpg",
+				"assets/img/bakar1/img (5).jpg"
+			]
 		},
 		{
 			"id": "semarang",
@@ -27,7 +33,11 @@
 			"nama": "Foto Yearbook",
 			"tanggal": "20 Januari 2023",
 
-			"url": ["assets/img/cth3.jpg", "assets/img/cth4.jpg"]
+			"url": [
+				"assets/img/yb/img (1).jpg",
+				"assets/img/yb/img (2).jpg",
+				"assets/img/yb/img (3).jpg"
+			]
 		},
 		{
 			"id": "nexus",

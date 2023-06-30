@@ -744,6 +744,14 @@ footer .credits a:hover {
 		padding-left: 80px;
 		padding-right: 25px;
 	}
+	.container::before,
+	.left-container::before {
+		left: 80px;
+		right: 25px;
+	}
+	.left-container::before {
+		box-shadow: 1px 1px 3px var(--primary_three);
+	}
 	.container img {
 		left: 10px;
 	}
@@ -760,7 +768,7 @@ footer .credits a:hover {
 	}
 	.left-container-arrow {
 		border-left: 0;
-		border-right: 15px solid #fff;
+		border-right: 15px solid var(--primary_one);
 		left: -15px;
 	}
 	.right-container {
