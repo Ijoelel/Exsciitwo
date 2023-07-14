@@ -613,6 +613,7 @@ footer .credits a:hover {
 	user-select: none;
 }
 .modal-content-img .btn {
+	cursor: pointer;
 	position: absolute;
 	z-index: 1;
 	color: rgba(255, 255, 255, 0.7);
