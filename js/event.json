@@ -6,7 +6,11 @@
 			"tanggal": "17 Agustus 2022",
 			"shortDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, similique",
 			"longDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt incidunt magni voluptatum iste amet, ipsa facere a placeat error, doloremque saepe exercitationem! Perspiciatis suscipit ad doloribus odio ea, in esse.",
-			"url": ["assets/img/cth1.jpg", "assets/img/cth2.jpg"]
+			"url": [
+				"assets/img/merdeka/img (1).jpg",
+				"assets/img/merdeka/img (2).JPG",
+				"assets/img/merdeka/img (3).JPG"
+			]
 		},
 		{
 			"id": "bakar1",
@@ -26,7 +30,13 @@
 			"nama": "Trip to Semarang",
 			"tanggal": "26 Oktober 2022",
 
-			"url": ["assets/img/cth1.jpg", "assets/img/cth2.jpg"]
+			"url": [
+				"assets/img/semarang/img (1).JPG",
+				"assets/img/semarang/img (2).JPG",
+				"assets/img/semarang/img (3).JPG",
+				"assets/img/semarang/img (4).JPG",
+				"assets/img/semarang/img (5).JPG"
+			]
 		},
 		{
 			"id": "yb",
@@ -67,13 +77,27 @@
 			"id": "graduate",
 			"nama": "Purnawiyata",
 			"tanggal": "25 Mei 2023",
-			"url": ["assets/img/wisuda/img1.jpg", "assets/img/wisuda/img2.jpg"]
+			"url": [
+				"assets/img/wisuda/img (1).JPG",
+				"assets/img/wisuda/img (2).JPG",
+				"assets/img/wisuda/img (3).jpg",
+				"assets/img/wisuda/img (4).jpg"
+			]
 		},
 		{
 			"id": "bakar2",
 			"nama": "Bakar - Bakar #2",
 			"tanggal": "3 Juni 2023",
-			"url": ["assets/img/cth3.jpg", "assets/img/cth4.jpg"]
+			"url": [
+				"assets/img/bakar2/img (1).jpg",
+				"assets/img/bakar2/img (2).jpg",
+				"assets/img/bakar2/img (3).jpg",
+				"assets/img/bakar2/img (4).jpg",
+				"assets/img/bakar2/img (5).jpg",
+				"assets/img/bakar2/img (6).jpg",
+				"assets/img/bakar2/img (7).jpg",
+				"assets/img/bakar2/img (8).jpg"
+			]
 		}
 	]
 }

@@ -506,6 +506,7 @@ input:checked + .slider::before {
 	width: 100%;
 	width: 100%;
 	position: relative;
+	display: none;
 }
 .documentation h2 {
 	text-align: center;
