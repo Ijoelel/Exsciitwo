@@ -587,8 +587,12 @@ footer .credits a:hover {
 }
 
 .modal-container .close-icon {
+	pointer: cursor;
 	position: absolute;
 	right: 1rem;
+}
+.close-icon:hover {
+	color: var(--primary-one)
 }
 .modal-content {
 	color: #2c2a2a;
